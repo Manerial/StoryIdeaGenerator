@@ -1,0 +1,20 @@
+ALL	Main Character
+26+	Parent
+40-	Children
+ALL	Sibling
+ALL	Cousin
+26+	Uncle / Aunt
+40-	Nephew / Niece
+40+	Aïeul
+23+	Husband / Wife
+5+	Boyfriend
+80-	Fillancé
+ALL	Best friend
+ALL	Friend
+ALL	Neighbor
+ALL	Enemy
+ALL	Worst enemy
+16+	Stalker
+16+	Sex	Friend
+18+	Colleague
+ALL	Acquaintance

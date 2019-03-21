@@ -1,0 +1,9 @@
+16-	Anorexic
+16/18	Lean
+18/20	End
+22/25	Square
+20/22	Slender
+23/25	Muscular
+23/25	Wrapped
+25/30	Surpoid
+30+	Obesity

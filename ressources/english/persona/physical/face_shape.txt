@@ -1,0 +1,5 @@
+Long
+Square
+Impeded
+Oval
+Round

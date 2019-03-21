@@ -1,0 +1,77 @@
+Butcher
+Florist
+Trader
+Librarian
+Cashier
+Driver
+Tenant
+Computer scientist
+Entrepreneur
+Worker
+Policy
+Writer
+Assassin
+King
+Queen
+Police officer
+Marshal Ferrand
+Military
+Astrophysicist
+Mathematician
+Professor
+Dentist
+Farmer
+Artisan
+Primeur
+Detective
+Guide
+Wise woman
+Puppeteer
+Doctor
+Sharpener
+Cook
+Soldier
+Steward
+Maid
+Auxiliary to the person
+Architect
+Baker
+Jeweler
+Geographer
+Accounting
+Dressmaker
+Storyteller
+Perfumer
+Designer
+Cabinetmaker
+Editor
+Herbalist
+Hostess
+Bailiff
+Illustrator
+Male nurse
+Inspector
+Singer
+Journalist
+Judge
+Bookseller
+Musician
+Notary
+Optician
+Pharmacist
+Psychologist
+Director
+Firefighter
+Astraunaute
+Wine waiter
+Translator
+Volcanologist
+Mayor
+President
+Courtier
+Watchmaker
+Shoemaker
+Locksmith
+Plumber
+Searcher
+Veterinary
