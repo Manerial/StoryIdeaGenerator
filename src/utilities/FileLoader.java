@@ -15,7 +15,7 @@ public class FileLoader extends Thread {
 	 */
 	public static String getRandomLine(String filePath) {
 		String[] lines = read(filePath).split("\n");
-		return lines[RandomClass.getRandBelow(lines.length - 2)];
+		return lines[RandomClass.getRandBelow(lines.length - 1)];
 	}
 
 	/**
