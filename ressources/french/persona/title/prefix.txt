@@ -38,3 +38,4 @@ Le démon
 L'auteur
 Le sage
 Le mage
+Le faiseur

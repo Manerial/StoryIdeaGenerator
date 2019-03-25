@@ -66,7 +66,7 @@ public class TitleCreator {
 	private static String getAdjective(String adjective, String language) {
 		// 3 chances out of 5
 		if (adjective == null && random.nextInt(5) < 3) {
-			adjective = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.TIT_ADJECTIF);
+			adjective = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.TIT_ADJECTIVE);
 		}
 		return adjective;
 	}
