@@ -1,9 +1,9 @@
 16-	Anorexique
 16/18	Maigre
 18/20	Fin
-22/25	Carré
-20/22	Elancé
-23/25	Musclé
+21/22	Elancé
+21/25	Carré
+21/25	Musclé
 23/25	Enveloppé
 25/30	Surpoid
 30+	Obesité
