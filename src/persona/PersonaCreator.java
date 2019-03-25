@@ -17,17 +17,19 @@ public class PersonaCreator {
 	 * @param job : If null, created randomly
 	 * @param traits : If null, created randomly
 	 * @param physical : If null, created randomly
+	 * @param title : If null, created randomly
 	 * @param language : The language you want to use for the creation. Uses the one of FileAccess.
 	 * @return the created persona
 	 */
-	public static Persona createPersona(int minAge, int maxAge, String name, String position, String job, String[] traits, Physical physical, String language) {
+	public static Persona createPersona(int minAge, int maxAge, String name, String position, String job, String[] traits, Physical physical, Title title, String language) {
 		int age = getAge(minAge, maxAge);
 		position = getPosition(position, age, language);
 		job = getJob(job, age, language);
 		physical = getPhysical(physical, age, language);
 		traits = getTraits(traits, language);
 		name = getName(name, physical.getGender());
-		return new Persona(age, name, position, job, traits, physical);
+		title = getTitle(title, language);
+		return new Persona(age, name, position, job, traits, physical, title);
 	}
 
 	/**
@@ -42,7 +44,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * If needed, get a random name depending of the gender
+	 * If needed, get a random name depending of the gender.
 	 *
 	 * @param name : If null, generate a new one
 	 * @param gender : The generated name will depend of the gender
@@ -56,7 +58,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * If needed, get a random position depending of the age
+	 * If needed, get a random position depending of the age.
 	 *
 	 * @param position : If null, generate a new one
 	 * @param age : The generated position will depend of the age
@@ -75,7 +77,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * If needed, get a random job depending of the age
+	 * If needed, get a random job depending of the age.
 	 *
 	 * @param job : If null, generate a new one
 	 * @param age : The generated job will depend of the age
@@ -92,7 +94,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * If needed, get a random physic depending of the age
+	 * If needed, get a random physic depending of the age.
 	 *
 	 * @param physical : If null, generate a new one
 	 * @param age : The generated age will depend of the age
@@ -107,7 +109,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * If needed, get a random set of traits
+	 * If needed, get a random set of traits.
 	 *
 	 * @param traits : If null, generate a new set
 	 * @param language : The generation language
@@ -125,7 +127,21 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * Generate a bunch of traits, handicap and characteristics
+	 * If needed, get a random title.
+	 *
+	 * @param title : If null, generate a new one
+	 * @param language : The generation language
+	 * @return the title
+	 */
+	public static Title getTitle(Title title, String language) {
+		if (title == null) {
+			title = TitleCreator.createTitle(null, null, null, language);
+		}
+		return title;
+	}
+
+	/**
+	 * Generate a bunch of traits, handicap and characteristics.
 	 *
 	 * @param pathGoodTraits : The path to access the good traits
 	 * @param pathBadTraits : The path to access the bad traits
@@ -149,7 +165,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * Read a file to generate a random number of traits
+	 * Read a file to generate a random number of traits.
 	 *
 	 * @param traits : Where the new traits will be stored
 	 * @param numberOfTraits : The number of traits to generate
@@ -170,7 +186,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * Check if a list of string contains a string
+	 * Check if a list of string contains a string.
 	 *
 	 * @param list : The list to check
 	 * @param word : The word to check
@@ -186,7 +202,7 @@ public class PersonaCreator {
 	}
 
 	/**
-	 * Check if the ageRank matches the given age
+	 * Check if the ageRank matches the given age.
 	 *
 	 * @param ageRankStr : The age rank to check
 	 * @param age : The age to check

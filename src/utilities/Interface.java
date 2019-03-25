@@ -31,6 +31,7 @@ public class Interface {
 		display("\t Age : " + persona.getAge());
 		display("\t Genre : " + ((persona.getGender() == Gender.B) ? "Garçon" : "Fille"));
 		display("\t Position : " + persona.getPosition());
+		display("\t Titre : " + persona.getTitle());
 		display("\t Metier : " + persona.getJob());
 		display("\t Informations : ");
 		for (String trait : persona.getTraits()) {
