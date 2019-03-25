@@ -6,6 +6,7 @@ public class FileAccess {
 
 	public static final String PERSONNA = "\\persona";
 	public static final String PHYSICAL = PERSONNA + "\\physical";
+	public static final String TITLE = PERSONNA + "\\title";
 	public static final String WRITTING_OPTIONS = "\\writting options";
 
 	public static final String BOYS_FILE_PATH = RESSOURCES + "\\boys.txt";
@@ -24,6 +25,9 @@ public class FileAccess {
 	public static final String PHY_HAIRCOLOR_FILE = PHYSICAL + "\\hair_color.txt";
 	public static final String PHY_HAIRSTYLE_FILE = PHYSICAL + "\\hair_style.txt";
 	public static final String PHY_MORPHOLOGY_FILE = PHYSICAL + "\\morphology.txt";
+	public static final String TIT_PREFIX = TITLE + "\\name.txt";
+	public static final String TIT_SUFFIX = TITLE + "\\suffix.txt";
+	public static final String TIT_ADJECTIF = TITLE + "\\adjectif.txt";
 
 	public static final String FR_DIR = "\\french";
 	public static final String EN_DIR = "\\english";
