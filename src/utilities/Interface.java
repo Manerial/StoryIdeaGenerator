@@ -51,7 +51,7 @@ public class Interface {
 	 *
 	 * @param message : the message to display
 	 */
-	public static void display(String message) {
+	private static void display(String message) {
 		System.out.println(message);
 	}
 }
