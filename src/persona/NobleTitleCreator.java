@@ -5,7 +5,7 @@ import java.util.Random;
 import utilities.FileAccess;
 import utilities.FileLoader;
 
-public class TitleCreator {
+public class NobleTitleCreator {
 	private static Random random = new Random();
 
 	/**
@@ -18,11 +18,11 @@ public class TitleCreator {
 	 * @param language : The language you want to use for the creation. Uses the one of FileAccess.
 	 * @return
 	 */
-	public static Title createTitle(String prefix, String suffix, String adjective, String language) {
+	public static NobleTitle createNobleTitle(String prefix, String suffix, String adjective, String language) {
 		prefix = getPrefix(prefix, language);
 		suffix = getSuffix(suffix, language);
 		adjective = getAdjective(adjective, language);
-		return new Title(prefix, suffix, adjective);
+		return new NobleTitle(prefix, suffix, adjective);
 	}
 
 	/**

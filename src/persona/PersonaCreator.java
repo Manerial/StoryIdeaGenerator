@@ -21,7 +21,7 @@ public class PersonaCreator {
 	 * @param language : The language you want to use for the creation. Uses the one of FileAccess.
 	 * @return the created persona
 	 */
-	public static Persona createPersona(int minAge, int maxAge, String name, String position, String job, String[] traits, Physical physical, Title title, String language) {
+	public static Persona createPersona(int minAge, int maxAge, String name, String position, String job, String[] traits, Physical physical, NobleTitle title, String language) {
 		int age = getAge(minAge, maxAge);
 		position = getPosition(position, age, language);
 		job = getJob(job, age, language);
@@ -133,9 +133,9 @@ public class PersonaCreator {
 	 * @param language : The generation language
 	 * @return the title
 	 */
-	public static Title getTitle(Title title, String language) {
+	public static NobleTitle getTitle(NobleTitle title, String language) {
 		if (title == null) {
-			title = TitleCreator.createTitle(null, null, null, language);
+			title = NobleTitleCreator.createNobleTitle(null, null, null, language);
 		}
 		return title;
 	}

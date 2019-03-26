@@ -7,7 +7,7 @@ public class Persona {
 	private Physical physical;
 	private String position;
 	private String[] traits;
-	private Title title;
+	private NobleTitle title;
 
 	/**
 	 * Generic constructor
@@ -20,7 +20,7 @@ public class Persona {
 	 * @param physical : The physical of the character
 	 * @param title : The title of the character
 	 */
-	public Persona(int age, String name, String position, String job, String[] traits, Physical physical, Title title) {
+	public Persona(int age, String name, String position, String job, String[] traits, Physical physical, NobleTitle title) {
 		this.age = age;
 		this.position = position;
 		this.job = job;
@@ -176,7 +176,7 @@ public class Persona {
 	 *
 	 * @param title : The title to set
 	 */
-	public void setTitle(Title title) {
+	public void setTitle(NobleTitle title) {
 		this.title = title;
 	}
 }

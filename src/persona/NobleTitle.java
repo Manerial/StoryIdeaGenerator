@@ -1,6 +1,6 @@
 package persona;
 
-public class Title {
+public class NobleTitle {
 	private String prefix;
 	private String suffix;
 	private String adjective;
@@ -12,7 +12,7 @@ public class Title {
 	 * @param suffix : The second part of the title (can be empty)
 	 * @param adjective : The third part of the title (can be empty)
 	 */
-	public Title(String prefix, String suffix, String adjective) {
+	public NobleTitle(String prefix, String suffix, String adjective) {
 		this.prefix = prefix;
 		this.suffix = suffix;
 		this.adjective = adjective;
@@ -21,7 +21,7 @@ public class Title {
 	/**
 	 * Empty constructor
 	 */
-	public Title() {
+	public NobleTitle() {
 	}
 
 	/**
