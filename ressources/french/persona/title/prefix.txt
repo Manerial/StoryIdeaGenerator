@@ -80,3 +80,5 @@ Le cuisinier
 Le recycleur
 Le druide
 Le moine
+Le pèlerin
+Le vampire
