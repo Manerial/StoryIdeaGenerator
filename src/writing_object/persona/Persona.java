@@ -1,13 +1,18 @@
-package persona;
+package writing_object.persona;
 
-public class Persona {
+import writing_object.WritingObjectAbstract;
+import writing_object.nobility_title.NobilityTitle;
+import writing_object.persona.physical.Gender;
+import writing_object.persona.physical.Physical;
+
+public class Persona extends WritingObjectAbstract {
 	private int age;
 	private String job;
 	private String name;
 	private Physical physical;
 	private String position;
 	private String[] traits;
-	private NobleTitle title;
+	private NobilityTitle title;
 
 	/**
 	 * Generic constructor
@@ -20,7 +25,7 @@ public class Persona {
 	 * @param physical : The physical of the character
 	 * @param title : The title of the character
 	 */
-	public Persona(int age, String name, String position, String job, String[] traits, Physical physical, NobleTitle title) {
+	public Persona(int age, String name, String position, String job, String[] traits, Physical physical, NobilityTitle title) {
 		this.age = age;
 		this.position = position;
 		this.job = job;
@@ -176,7 +181,24 @@ public class Persona {
 	 *
 	 * @param title : The title to set
 	 */
-	public void setTitle(NobleTitle title) {
+	public void setTitle(NobilityTitle title) {
 		this.title = title;
+	}
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		this.display(this.getName() + " : ");
+		this.display("\t Age : " + this.getAge());
+		this.display("\t Genre : " + ((this.getGender() == Gender.B) ? "Garçon" : "Fille"));
+		this.display("\t Position : " + this.getPosition());
+		this.display("\t Titre : " + this.getTitle());
+		this.display("\t Metier : " + this.getJob());
+		this.display("\t Informations : ");
+		for (String trait : this.getTraits()) {
+			this.display("\t\t " + trait);
+		}
+		this.display("\t Physique : ");
+		physical.display();
 	}
 }

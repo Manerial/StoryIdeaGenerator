@@ -1,8 +1,13 @@
-package persona;
+package writing_object.persona;
 
 import utilities.FileAccess;
 import utilities.FileLoader;
 import utilities.RandomClass;
+import writing_object.nobility_title.NobilityTitle;
+import writing_object.nobility_title.NobilityTitleCreator;
+import writing_object.persona.physical.Gender;
+import writing_object.persona.physical.Physical;
+import writing_object.persona.physical.PhysicalCreator;
 
 public class PersonaCreator {
 
@@ -21,7 +26,7 @@ public class PersonaCreator {
 	 * @param language : The language you want to use for the creation. Uses the one of FileAccess.
 	 * @return the created persona
 	 */
-	public static Persona createPersona(int minAge, int maxAge, String name, String position, String job, String[] traits, Physical physical, NobleTitle title, String language) {
+	public static Persona createPersona(int minAge, int maxAge, String name, String position, String job, String[] traits, Physical physical, NobilityTitle title, String language) {
 		int age = getAge(minAge, maxAge);
 		position = getPosition(position, age, language);
 		job = getJob(job, age, language);
@@ -133,9 +138,9 @@ public class PersonaCreator {
 	 * @param language : The generation language
 	 * @return the title
 	 */
-	public static NobleTitle getTitle(NobleTitle title, String language) {
+	public static NobilityTitle getTitle(NobilityTitle title, String language) {
 		if (title == null) {
-			title = NobleTitleCreator.createNobleTitle(null, null, null, language);
+			title = NobilityTitleCreator.createNobleTitle(null, null, null, language);
 		}
 		return title;
 	}

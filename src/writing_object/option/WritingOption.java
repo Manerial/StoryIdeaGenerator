@@ -1,8 +1,10 @@
-package writing_option;
+package writing_object.option;
 
 import java.util.ArrayList;
 
-public class WritingOption {
+import writing_object.WritingObjectAbstract;
+
+public class WritingOption extends WritingObjectAbstract {
 	private ArrayList<String> style;
 	private ArrayList<String> theme;
 
@@ -58,5 +60,17 @@ public class WritingOption {
 	 */
 	public void setTheme(ArrayList<String> theme) {
 		this.theme = theme;
+	}
+
+	@Override
+	public void display() {
+		this.display("Style(s) : ");
+		for (String style : this.getStyle()) {
+			this.display("\t\t " + style);
+		}
+		this.display("Theme(s) : ");
+		for (String theme : this.getTheme()) {
+			this.display("\t\t " + theme);
+		}
 	}
 }

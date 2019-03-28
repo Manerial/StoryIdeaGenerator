@@ -1,11 +1,11 @@
-package persona;
+package writing_object.nobility_title;
 
 import java.util.Random;
 
 import utilities.FileAccess;
 import utilities.FileLoader;
 
-public class NobleTitleCreator {
+public class NobilityTitleCreator {
 	private static Random random = new Random();
 
 	/**
@@ -18,11 +18,11 @@ public class NobleTitleCreator {
 	 * @param language : The language you want to use for the creation. Uses the one of FileAccess.
 	 * @return
 	 */
-	public static NobleTitle createNobleTitle(String prefix, String suffix, String adjective, String language) {
+	public static NobilityTitle createNobleTitle(String prefix, String suffix, String adjective, String language) {
 		prefix = getPrefix(prefix, language);
 		suffix = getSuffix(suffix, language);
 		adjective = getAdjective(adjective, language);
-		return new NobleTitle(prefix, suffix, adjective);
+		return new NobilityTitle(prefix, suffix, adjective);
 	}
 
 	/**

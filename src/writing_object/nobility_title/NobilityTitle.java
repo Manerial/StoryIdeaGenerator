@@ -1,6 +1,8 @@
-package persona;
+package writing_object.nobility_title;
 
-public class NobleTitle {
+import writing_object.WritingObjectAbstract;
+
+public class NobilityTitle extends WritingObjectAbstract {
 	private String prefix;
 	private String suffix;
 	private String adjective;
@@ -12,7 +14,7 @@ public class NobleTitle {
 	 * @param suffix : The second part of the title (can be empty)
 	 * @param adjective : The third part of the title (can be empty)
 	 */
-	public NobleTitle(String prefix, String suffix, String adjective) {
+	public NobilityTitle(String prefix, String suffix, String adjective) {
 		this.prefix = prefix;
 		this.suffix = suffix;
 		this.adjective = adjective;
@@ -21,7 +23,7 @@ public class NobleTitle {
 	/**
 	 * Empty constructor
 	 */
-	public NobleTitle() {
+	public NobilityTitle() {
 	}
 
 	/**
@@ -58,5 +60,10 @@ public class NobleTitle {
 	 */
 	public void setAdjective(String adjective) {
 		this.adjective = adjective;
+	}
+
+	@Override
+	public void display() {
+		this.display(this.getTitle());
 	}
 }
