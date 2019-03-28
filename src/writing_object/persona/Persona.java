@@ -185,9 +185,11 @@ public class Persona extends WritingObjectAbstract {
 		this.title = title;
 	}
 
+	/**
+	 * Display the persona
+	 */
 	@Override
 	public void display() {
-		// TODO Auto-generated method stub
 		this.display(this.getName() + " : ");
 		this.display("\t Age : " + this.getAge());
 		this.display("\t Genre : " + ((this.getGender() == Gender.B) ? "Garçon" : "Fille"));

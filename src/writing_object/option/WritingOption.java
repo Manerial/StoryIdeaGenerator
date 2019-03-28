@@ -62,6 +62,9 @@ public class WritingOption extends WritingObjectAbstract {
 		this.theme = theme;
 	}
 
+	/**
+	 * Display the writing options
+	 */
 	@Override
 	public void display() {
 		this.display("Style(s) : ");

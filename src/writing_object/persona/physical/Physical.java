@@ -212,6 +212,9 @@ public class Physical extends WritingObjectAbstract {
 		return BMI;
 	}
 
+	/**
+	 * Display the physical
+	 */
 	@Override
 	public void display() {
 		this.display("\t\t Taille : " + this.getHeight() + "cm");

@@ -30,7 +30,7 @@ public class Launcher {
 		Physical phys1 = PhysicalCreator.createPhysical("Bleus", "Courts bouclés", null, null, 150, 80000, null, null, -1, FileAccess.FR_DIR);
 
 		// Creates custom title for a character
-		NobilityTitle t1 = NobilityTitleCreator.createNobleTitle(null, "de l'or", null, FileAccess.FR_DIR);
+		NobilityTitle t1 = NobilityTitleCreator.createNobilityTitle(null, "de l'or", null, FileAccess.FR_DIR);
 
 		// Creates custom persona
 		Persona p1 = PersonaCreator.createPersona(1, 82, "Zorora", "Miss Terre", null, null, phys1, t1, FileAccess.FR_DIR);

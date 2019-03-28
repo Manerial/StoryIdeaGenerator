@@ -62,6 +62,9 @@ public class NobilityTitle extends WritingObjectAbstract {
 		this.adjective = adjective;
 	}
 
+	/**
+	 * Display the nobility title
+	 */
 	@Override
 	public void display() {
 		this.display(this.getTitle());

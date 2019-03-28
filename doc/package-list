@@ -1,4 +1,7 @@
 launcher
-persona
 utilities
-writingOption
+writing_object
+writing_object.nobility_title
+writing_object.option
+writing_object.persona
+writing_object.persona.physical

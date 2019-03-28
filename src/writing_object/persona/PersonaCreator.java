@@ -140,7 +140,7 @@ public class PersonaCreator {
 	 */
 	public static NobilityTitle getTitle(NobilityTitle title, String language) {
 		if (title == null) {
-			title = NobilityTitleCreator.createNobleTitle(null, null, null, language);
+			title = NobilityTitleCreator.createNobilityTitle(null, null, null, language);
 		}
 		return title;
 	}

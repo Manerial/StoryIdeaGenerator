@@ -16,9 +16,9 @@ public class NobilityTitleCreator {
 	 * @param suffix : If null, created randomly
 	 * @param adjective : If null, created randomly
 	 * @param language : The language you want to use for the creation. Uses the one of FileAccess.
-	 * @return
+	 * @return the NobilityTitle generated
 	 */
-	public static NobilityTitle createNobleTitle(String prefix, String suffix, String adjective, String language) {
+	public static NobilityTitle createNobilityTitle(String prefix, String suffix, String adjective, String language) {
 		prefix = getPrefix(prefix, language);
 		suffix = getSuffix(suffix, language);
 		adjective = getAdjective(adjective, language);
