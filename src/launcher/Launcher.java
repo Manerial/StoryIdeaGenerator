@@ -11,8 +11,8 @@ import persona.PhysicalCreator;
 import utilities.FileAccess;
 import utilities.Interface;
 import utilities.ItemGenerator;
-import writingOption.WritingOption;
-import writingOption.WritingOptionCreator;
+import writing_option.WritingOption;
+import writing_option.WritingOptionCreator;
 
 public class Launcher {
 

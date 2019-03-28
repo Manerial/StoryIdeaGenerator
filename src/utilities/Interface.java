@@ -2,7 +2,7 @@ package utilities;
 
 import persona.Gender;
 import persona.Persona;
-import writingOption.WritingOption;
+import writing_option.WritingOption;
 
 public class Interface {
 	/**

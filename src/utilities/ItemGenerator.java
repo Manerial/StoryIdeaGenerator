@@ -2,8 +2,8 @@ package utilities;
 
 import persona.Persona;
 import persona.PersonaCreator;
-import writingOption.WritingOption;
-import writingOption.WritingOptionCreator;
+import writing_option.WritingOption;
+import writing_option.WritingOptionCreator;
 
 public class ItemGenerator {
 	/**
