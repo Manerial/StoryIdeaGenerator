@@ -23,9 +23,9 @@ To launch it, you can :
 	-use the menu : Run -> Run
 To change it : open the project from the Eclipse window -> open the src folder -> open the launcher package (folder) -> double click on Launcher.java
 
-=====RESSOURCES=====
-This project uses different ressources files.
-These files are stored in the ressources folder of the StoryIdeaGenerator project.
+=====RESOURCES=====
+This project uses different resources files.
+These files are stored in the resources folder of the StoryIdeaGenerator project.
 You can update them as much as you want (adding/removing lines).
 
 =====PERSONA=====
@@ -38,7 +38,7 @@ A persona contains :
  - a list of traits
  - a physical description
 
-A phisical description contains :
+A physical description contains :
  - a hairStyle
  - a hairColor
  - a eyesColor
