@@ -74,7 +74,7 @@ public class PersonaCreator {
 		if (position == null) {
 			String[] posTemp;
 			do {
-				posTemp = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PER_POSITION_FILE).split("\t");
+				posTemp = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PER_POSITION_FILE).split("\t");
 			} while (!checkAge(posTemp[0], age));
 			position = posTemp[1];
 		}
@@ -93,7 +93,7 @@ public class PersonaCreator {
 		if (age < 18) {
 			job = "";
 		} else if (job == null) {
-			job = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PER_JOB_FILE);
+			job = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PER_JOB_FILE);
 		}
 		return job;
 	}
@@ -122,10 +122,10 @@ public class PersonaCreator {
 	 */
 	public static String[] getTraits(String[] traits, String language) {
 		if (traits == null) {
-			String pathGoodSide = FileAccess.RESSOURCES + language + FileAccess.PER_GOODSIDE_FILE;
-			String pathBadSide = FileAccess.RESSOURCES + language + FileAccess.PER_BADSIDE_FILE;
-			String pathHandicap = FileAccess.RESSOURCES + language + FileAccess.PER_HANDICAP_FILE;
-			String pathCharacteristics = FileAccess.RESSOURCES + language + FileAccess.PER_CHARACTERISTICS_FILE;
+			String pathGoodSide = FileAccess.RESOURCES + language + FileAccess.PER_GOODSIDE_FILE;
+			String pathBadSide = FileAccess.RESOURCES + language + FileAccess.PER_BADSIDE_FILE;
+			String pathHandicap = FileAccess.RESOURCES + language + FileAccess.PER_HANDICAP_FILE;
+			String pathCharacteristics = FileAccess.RESOURCES + language + FileAccess.PER_CHARACTERISTICS_FILE;
 			traits = createTraits(pathGoodSide, pathBadSide, pathHandicap, pathCharacteristics);
 		}
 		return traits;

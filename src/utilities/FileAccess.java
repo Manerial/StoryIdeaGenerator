@@ -2,15 +2,15 @@ package utilities;
 
 public class FileAccess {
 	static final String ROOT_DIRECTORY = System.getProperty("user.dir");
-	public static final String RESSOURCES = ROOT_DIRECTORY + "\\ressources";
+	public static final String RESOURCES = ROOT_DIRECTORY + "\\resources";
 
 	public static final String PERSONNA = "\\persona";
 	public static final String PHYSICAL = PERSONNA + "\\physical";
 	public static final String TITLE = PERSONNA + "\\title";
 	public static final String WRITTING_OPTIONS = "\\writting options";
 
-	public static final String BOYS_FILE_PATH = RESSOURCES + "\\boys.txt";
-	public static final String GIRLS_FILE_PATH = RESSOURCES + "\\girls.txt";
+	public static final String BOYS_FILE_PATH = RESOURCES + "\\boys.txt";
+	public static final String GIRLS_FILE_PATH = RESOURCES + "\\girls.txt";
 
 	public static final String PER_BADSIDE_FILE = PERSONNA + "\\bad_traits.txt";
 	public static final String PER_GOODSIDE_FILE = PERSONNA + "\\good_traits.txt";

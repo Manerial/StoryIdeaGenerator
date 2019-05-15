@@ -32,7 +32,7 @@ public class WritingOptionCreator {
 	private static ArrayList<String> getStyle(ArrayList<String> style, String language) {
 		if (style == null) {
 			style = new ArrayList<>();
-			style.add(FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.OPT_STYLE_FILE));
+			style.add(FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.OPT_STYLE_FILE));
 		}
 		return style;
 	}
@@ -47,7 +47,7 @@ public class WritingOptionCreator {
 	private static ArrayList<String> getTheme(ArrayList<String> theme, String language) {
 		if (theme == null) {
 			theme = new ArrayList<>();
-			theme.add(FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.OPT_THEME_FILE));
+			theme.add(FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.OPT_THEME_FILE));
 		}
 		return theme;
 	}

@@ -34,7 +34,7 @@ public class NobilityTitleCreator {
 	 */
 	private static String getPrefix(String prefix, String language) {
 		if (prefix == null) {
-			prefix = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.TIT_PREFIX);
+			prefix = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.TIT_PREFIX);
 		}
 		return prefix;
 	}
@@ -50,7 +50,7 @@ public class NobilityTitleCreator {
 	private static String getSuffix(String suffix, String language) {
 		// 3 chances out of 5
 		if (suffix == null && random.nextInt(5) < 3) {
-			suffix = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.TIT_SUFFIX);
+			suffix = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.TIT_SUFFIX);
 		}
 		return suffix;
 	}
@@ -66,7 +66,7 @@ public class NobilityTitleCreator {
 	private static String getAdjective(String adjective, String language) {
 		// 3 chances out of 5
 		if (adjective == null && random.nextInt(5) < 3) {
-			adjective = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.TIT_ADJECTIVE);
+			adjective = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.TIT_ADJECTIVE);
 		}
 		return adjective;
 	}

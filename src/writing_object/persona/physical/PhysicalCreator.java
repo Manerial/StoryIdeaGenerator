@@ -43,7 +43,7 @@ public class PhysicalCreator {
 	 */
 	public static String getHairColor(String hairColor, String language) {
 		if (hairColor == null) {
-			hairColor = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PHY_HAIRCOLOR_FILE);
+			hairColor = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PHY_HAIRCOLOR_FILE);
 		}
 		return hairColor;
 	}
@@ -57,7 +57,7 @@ public class PhysicalCreator {
 	 */
 	public static String getHairStyle(String hairStyle, String language) {
 		if (hairStyle == null) {
-			hairStyle = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PHY_HAIRSTYLE_FILE);
+			hairStyle = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PHY_HAIRSTYLE_FILE);
 		}
 		return hairStyle;
 	}
@@ -71,7 +71,7 @@ public class PhysicalCreator {
 	 */
 	public static String getEyesColor(String eyesColor, String language) {
 		if (eyesColor == null) {
-			eyesColor = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PHY_EYESCOLOR_FILE);
+			eyesColor = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PHY_EYESCOLOR_FILE);
 		}
 		return eyesColor;
 	}
@@ -85,7 +85,7 @@ public class PhysicalCreator {
 	 */
 	public static String getFaceShape(String faceShape, String language) {
 		if (faceShape == null) {
-			faceShape = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PHY_FACESHAPE_FILE);
+			faceShape = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PHY_FACESHAPE_FILE);
 		}
 		return faceShape;
 	}
@@ -102,7 +102,7 @@ public class PhysicalCreator {
 		if (morphology == null) {
 			String[] morphoTemp;
 			do {
-				morphoTemp = FileLoader.getRandomLine(FileAccess.RESSOURCES + language + FileAccess.PHY_MORPHOLOGY_FILE).split("\t");
+				morphoTemp = FileLoader.getRandomLine(FileAccess.RESOURCES + language + FileAccess.PHY_MORPHOLOGY_FILE).split("\t");
 			} while (!checkBMI(morphoTemp[0], BMI));
 			morphology = morphoTemp[1];
 		}
