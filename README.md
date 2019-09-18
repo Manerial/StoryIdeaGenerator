@@ -38,7 +38,7 @@ These files are stored in the resources folder of the StoryIdeaGenerator project
 
 You can update them as much as you want (adding/removing lines).
 
-=====PERSONA=====
+## PERSONA
 A persona contains :
  - an age
  - a job
@@ -47,6 +47,7 @@ A persona contains :
  - a list of traits
  - a physical description
 
+## PHYSICAL
 A physical description contains :
  - a hairStyle
  - a hairColor
@@ -57,7 +58,7 @@ A physical description contains :
  - a height
  - a gender
 
-=====Writing options=====
+## Writing options
 A writing options contains :
  - a list of styles
  - a list of themes
